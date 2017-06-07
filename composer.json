@@ -1,0 +1,25 @@
+{
+    "name": "royfj/captcha",
+    "type": "library",
+    "description": "Image Captcha library",
+    "version": "0.1.0",
+    "homepage": "http://www.talentyun.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Li Guanghui",
+            "email": "liguanghui2006@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Royfj\\Captcha\\": "src/"
+        }
+    }
+}
