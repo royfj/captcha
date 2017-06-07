@@ -3,7 +3,7 @@ Image Captcha
 
 ```
 // Create a captcha image.
-$captcha = new \Royfj\Captcha\Builder();`
+$captcha = new \Royfj\Captcha\Builder();
 $captcha->output(); 
 ```
 
