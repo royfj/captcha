@@ -127,8 +127,9 @@ class Builder {
 
     /**
      * Output as an image.
+     * @param array $headers
      */
-    public function output()
+    public function output($headers = [])
     {
         if (ob_get_length()) ob_clean();
 
@@ -138,6 +139,11 @@ class Builder {
         $this->createFont();
 
         header('Content-type:image/png');
+        if ($headers) {
+            foreach ($headers as $header) {
+                header($header);
+            }
+        }
         imagepng($this->img);
         imagedestroy($this->img);
     }
